@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Swastik Game Website</title>
+
+<style>
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🎮 Click Game</h1>
+<p>Score: <span id="score">0</span></p>
+
+<button onclick="increaseScore()">Click Fast 😎</button>
+
+<script>
+let score = 0;
+function increaseScore() {
+    score++;
+    document.getElementById("score").innerText = score;
+}
+</script>
+
+</body>
+
+</html>
